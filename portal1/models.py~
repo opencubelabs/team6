@@ -1,0 +1,13 @@
+from django.db import models
+
+# Create your models here.
+class User(models.Model):
+    Name = models.CharField(max_length=200)
+    Coupon = models.IntegerField()
+    Email = models.EmailField()
+    Mobile = models.IntegerField(max_length=10)
+    Event = models.CharField()
+
+class Events(models.Model):
+    Name=models.CharField()
+    Cost=models.IntegerField()
